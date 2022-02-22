@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <title>Meal Calculation</title>
+</head>
+
+<body>
+<div class="containers-grid">
+
+    <div class="one">
+      
+
+        <div class="meal">
+
+          <div class="ttt">
+
+            <label>Enter 1st person meal:</label>
+            <br>
+            <input class="mar" id="data1" type="number" step="0.01">
+            <button onclick="Calculation1()">Enter</button>
+
+          </div>
+          <br>
+          <div class="ttt">
+            <label class="marbtm">Enter 2nd person meal:</label>
+            <br>
+            <input class="mar" id="data2" type="number" step="0.01">
+            <button onclick="Calculation2()">Enter</button>
+          </div>
+
+          <br>
+
+          <div class="ttt">
+            <label>Enter 3rd person meal:</label>
+            <br>
+            <input class="mar" id="data3" type="number" step="0.01">
+            <button onclick="Calculation3()">Enter</button>
+          </div>
+
+
+          <br>
+
+          <label>Enter 4th person meal:</label>
+          <br>
+          <input class="mar" id="data4" type="number" step="0.01">
+          <button onclick="Calculation4()">Enter</button>
+
+
+
+          <br>
+          <br>
+
+          <label>Enter 5th person meal:</label>
+          <br>
+          <input class="mar" id="data5" type="number" step="0.01">
+          <button onclick="Calculation5()">Enter</button>
+
+
+          
+  
+
+          
+
+
+
+
+
+          <h3 id="rate"></h3>
+
+          <h3 id="totall"></h3>
+        </div>
+      </div>
+      
+      <div class="two">
+        <div class="kkl">
+
+          
+          <label class="marbtm">Enter Bazar Cost:</label>
+          <br>
+          <input class="mar" id="data-bazar" type="number" step="0.01">
+          <button onclick="CalculationBazar()">Enter</button>
+          
+          <p>Bazar Cost:</p>
+          
+          <p id="resBazar" ></p>
+        </div>
+        <br>
+
+       
+        
+
+        <button style="width: 120px; background-color: brown;"  onclick="sumBazar()">Total Bazar Cost</button>
+
+        <p id="showBazar"></p>
+
+        <button style="width: 80px; background-color: brown;" onclick="mealRate()">Meal Rate</button>
+
+
+        <p id="showMealRate"></p>
+
+
+        
+      </div>
+      <div class="three">
+
+        <table id="customers">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Daily Meal</th>
+            <th>Total</th>
+          
+
+          </tr>
+          <tr>
+            <td>1st</td>
+            <td>Khair</td>
+            <td>
+              <p id="res"></p>
+            </td>
+            <td>
+             <div class="total-btn">
+              <p id="show1"></p>
+            
+             </div>
+            </td>
+           
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>Kibria</td>
+            <td>
+              <p id="res2"></p>
+            </td>
+            <td>
+             
+              <p id="show2"></p>
+              
+           
+            </td>
+           
+          </tr>
+
+          <tr>
+            <td>3rd</td>
+            <td>Rasel</td>
+            <td><p id="res3"></p></td>
+            <td>
+            
+                <p id="show3"></p>
+               
+             
+              </td>
+
+              
+          </tr>
+
+          <tr>
+            <td>4th</td>
+            <td>Rakib</td>
+            <td><p id="res4"></p></td>
+            <td><p id="show4"></p></td>
+
+           
+          </tr>
+
+          <tr>
+            <td>5th</td>
+            <td>Kamal</td>
+            <td><p id="res5"></p></td>
+            <td><p id="show5"></p></td>
+
+           
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td>&nbsp;Total Meal ===</td>
+            <td><p id="show9"></p></td>
+
+            
+          </tr>
+         
+
+
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
