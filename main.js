@@ -4,6 +4,11 @@ var myArr3 = [];
 var myArr4 = [];
 var myArr5 = [];
 var myArrBazar = [];
+var myArrDeposit1 = [];
+var myArrDeposit2 = [];
+var myArrDeposit3 = [];
+var myArrDeposit4 = [];
+var myArrDeposit5 = [];
 
 function sum1() {
     var summ1 = myArr1.reduce((a, b) => a + b, 0);
@@ -88,7 +93,7 @@ function Calculation1() {
         pval = pval + myArr1[i]
     }
 
-    document.getElementById('res').innerHTML = myArr1;
+    document.getElementById('res1').innerHTML = myArr1;
 }
 
 
@@ -177,4 +182,23 @@ function CalculationBazar() {
         pval = pval + myArrBazar[i]
     }
     document.getElementById('resBazar').innerHTML = myArrBazar;
+}
+
+
+
+function DepCalculation1() {
+
+    var inputText = document.getElementById('DepData1').value;
+
+    let num = parseFloat(inputText)
+
+    myArrDeposit1.push(num);
+
+    var pval = "";
+
+    for (i = 0; i < myArrDeposit1.length; i++) {
+        pval = pval + myArrDeposit1[i]
+    }
+
+    document.getElementById('DepRes1').innerHTML = myArrDeposit1;
 }
