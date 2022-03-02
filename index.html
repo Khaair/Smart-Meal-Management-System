@@ -79,14 +79,16 @@
             <br>
             <input class="mar" id="DepData1" type="number" step="0.01">
             <button onclick="DepCalculation1()">Enter</button>
+            <button onclick="Depsum1()">Sum</button>
 
           </div>
           <br>
           <div class="ttt">
             <label class="marbtm">Enter 2nd person Deposit:</label>
             <br>
-            <input class="mar" id="data2" type="number" step="0.01">
-            <button onclick="Calculation2()">Enter</button>
+            <input class="mar" id="DepData2" type="number" step="0.01">
+            <button onclick="DepCalculation2()">Enter</button>
+            <button onclick="Depsum2()">Sum</button>
           </div>
 
           <br>
@@ -94,8 +96,9 @@
           <div class="ttt">
             <label>Enter 3rd person Deposit:</label>
             <br>
-            <input class="mar" id="data3" type="number" step="0.01">
-            <button onclick="Calculation3()">Enter</button>
+            <input class="mar" id="DepData3" type="number" step="0.01">
+            <button onclick="DepCalculation3()">Enter</button>
+            <button onclick="Depsum3()">Sum</button>
           </div>
 
 
@@ -103,8 +106,9 @@
 
           <label>Enter 4th person Deposit:</label>
           <br>
-          <input class="mar" id="data4" type="number" step="0.01">
-          <button onclick="Calculation4()">Enter</button>
+          <input class="mar" id="DepData4" type="number" step="0.01">
+          <button onclick="DepCalculation4()">Enter</button>
+          <button onclick="Depsum4()">Sum</button>
 
 
 
@@ -113,8 +117,12 @@
 
           <label>Enter 5th person Deposit:</label>
           <br>
-          <input class="mar" id="data5" type="number" step="0.01">
-          <button onclick="Calculation5()">Enter</button>
+          <input class="mar" id="DepData5" type="number" step="0.01">
+          <button onclick="DepCalculation5()">Enter</button>
+          <button onclick="Depsum5()">Sum</button>
+
+
+          
 
          
         </div>
@@ -143,6 +151,11 @@
         <p id="showBazar"></p>
 
         <button style="width: 80px; background-color: brown;" onclick="mealRate()">Meal Rate</button>
+
+        <button style="width: 80px; background-color: brown;" onclick="cost1()">Cost</button>
+
+
+        <button style="width: 80px; background-color: brown;" onclick="PabeDebe()">Pabe</button>
 
 
         <p id="showMealRate"></p>
@@ -243,8 +256,10 @@
             <th>ID</th>
             <th>Name</th>
             <th>Deposit</th>
-            <th>Pabe</th>
-            <th>Dibe</th>
+            <th>Joma</th>
+
+            <th>Khoros</th>
+            <th>Pabe/Dibe</th>
           
 
           </tr>
@@ -256,9 +271,18 @@
             </td>
             <td>
              <div class="total-btn">
-              <p id="DepShow1"></p>
+             
+              <p id="DepShow1"></p> 
             
              </div>
+            </td>
+
+            <td>
+              <p id="CostShow1"></p> 
+            </td>
+
+            <td>
+              <p id="PabeDebeShow1"></p> 
             </td>
            
           </tr>
@@ -283,7 +307,7 @@
             <td><p id="DepRes3"></p></td>
             <td>
             
-                <p id="DepShow4"></p>
+                <p id="DepShow3"></p>
                
              
               </td>
@@ -295,7 +319,7 @@
             <td>4th</td>
             <td>Rakib</td>
             <td><p id="DepRes4"></p></td>
-            <td><p id="DepShow5"></p></td>
+            <td><p id="DepShow4"></p></td>
 
            
           </tr>
@@ -303,7 +327,7 @@
           <tr>
             <td>5th</td>
             <td>Kamal</td>
-            <td><p id="DepRes4"></p></td>
+            <td><p id="DepRes5"></p></td>
             <td><p id="DepShow5"></p></td>
 
            

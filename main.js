@@ -66,6 +66,44 @@ function sumBazar() {
 }
 
 
+function Depsum1() {
+    var summ1 = myArrDeposit1.reduce((a, b) => a + b, 0);
+
+    document.getElementById('DepShow1').innerHTML = summ1;
+    return summ1
+}
+
+function Depsum2() {
+    var summ1 = myArrDeposit2.reduce((a, b) => a + b, 0);
+
+    document.getElementById('DepShow2').innerHTML = summ1;
+    return summ1
+}
+
+
+
+function Depsum3() {
+    var summ1 = myArrDeposit3.reduce((a, b) => a + b, 0);
+
+    document.getElementById('DepShow3').innerHTML = summ1;
+    return summ1
+}
+
+function Depsum4() {
+    var summ1 = myArrDeposit4.reduce((a, b) => a + b, 0);
+
+    document.getElementById('DepShow4').innerHTML = summ1;
+    return summ1
+}
+
+function Depsum5() {
+    var summ1 = myArrDeposit5.reduce((a, b) => a + b, 0);
+
+    document.getElementById('DepShow5').innerHTML = summ1;
+    return summ1
+}
+
+
 function mealRate() {
     let mr1 = sumBazar()
     let mr2 = ttl()
@@ -73,7 +111,33 @@ function mealRate() {
     let mealRate = mr1 / mr2
 
     document.getElementById('showMealRate').innerHTML = mealRate + " Taka" + " Per" + " Meal";
+
+    return mealRate
 }
+
+function cost1(){
+
+    // let c1 = mealRate() 
+    // let c2 = sum1()
+
+    let costt  = mealRate()  * sum1()
+
+    document.getElementById('CostShow1').innerHTML = costt;
+
+   
+
+    return costt
+
+}
+
+
+function PabeDebe(){
+    let PabeDebee = Depsum1() - cost1()
+
+    document.getElementById('PabeDebeShow1').innerHTML = PabeDebee;
+}
+
+
 
 
 
@@ -201,4 +265,76 @@ function DepCalculation1() {
     }
 
     document.getElementById('DepRes1').innerHTML = myArrDeposit1;
+}
+
+
+
+function DepCalculation2() {
+
+    var inputText = document.getElementById('DepData2').value;
+
+    let num = parseFloat(inputText)
+
+    myArrDeposit2.push(num);
+
+    var pval = "";
+
+    for (i = 0; i < myArrDeposit2.length; i++) {
+        pval = pval + myArrDeposit2[i]
+    }
+
+    document.getElementById('DepRes2').innerHTML = myArrDeposit2;
+}
+
+function DepCalculation3() {
+
+    var inputText = document.getElementById('DepData3').value;
+
+    let num = parseFloat(inputText)
+
+    myArrDeposit3.push(num);
+
+    var pval = "";
+
+    for (i = 0; i < myArrDeposit3.length; i++) {
+        pval = pval + myArrDeposit3[i]
+    }
+
+    document.getElementById('DepRes3').innerHTML = myArrDeposit3;
+}
+
+
+function DepCalculation4() {
+
+    var inputText = document.getElementById('DepData4').value;
+
+    let num = parseFloat(inputText)
+
+    myArrDeposit4.push(num);
+
+    var pval = "";
+
+    for (i = 0; i < myArrDeposit4.length; i++) {
+        pval = pval + myArrDeposit4[i]
+    }
+
+    document.getElementById('DepRes4').innerHTML = myArrDeposit4;
+}
+
+
+function DepCalculation5() {
+
+    var inputText = document.getElementById('DepData5').value;
+
+    let num = parseFloat(inputText)
+
+    myArrDeposit5.push(num);
+
+    var pval = "";
+
+    for (i = 0; i < myArrDeposit5.length; i++) {
+        pval = pval + myArrDeposit5[i]
+    }
+
+    document.getElementById('DepRes5').innerHTML = myArrDeposit5;
 }
