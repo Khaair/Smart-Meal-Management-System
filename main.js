@@ -117,26 +117,122 @@ function mealRate() {
 
 function cost1(){
 
-    // let c1 = mealRate() 
-    // let c2 = sum1()
 
     let costt  = mealRate()  * sum1()
 
     document.getElementById('CostShow1').innerHTML = costt;
 
-   
+    return costt
+
+}
+
+function cost2(){
+
+    let costt  = mealRate()  * sum2()
+
+    document.getElementById('CostShow2').innerHTML = costt;
 
     return costt
 
 }
 
 
-function PabeDebe(){
+function cost3(){
+
+    let costt  = mealRate()  * sum3()
+
+    document.getElementById('CostShow3').innerHTML = costt;
+
+    return costt
+
+}
+
+
+function cost4(){
+
+    let costt  = mealRate()  * sum4()
+
+    document.getElementById('CostShow4').innerHTML = costt;
+
+    return costt
+
+}
+
+
+function cost5(){
+
+    let costt  = mealRate()  * sum5()
+
+    document.getElementById('CostShow5').innerHTML = costt;
+
+    return costt
+
+}
+
+
+
+
+
+function PabeDebe1(){
     let PabeDebee = Depsum1() - cost1()
 
     document.getElementById('PabeDebeShow1').innerHTML = PabeDebee;
+
+    return PabeDebee
 }
 
+
+function PabeDebe2(){
+    let PabeDebee = Depsum2() - cost2()
+
+    document.getElementById('PabeDebeShow2').innerHTML = PabeDebee;
+
+    return PabeDebee
+}
+
+
+
+
+function PabeDebe3(){
+    let PabeDebee = Depsum3() - cost3()
+
+    document.getElementById('PabeDebeShow3').innerHTML = PabeDebee;
+
+    return PabeDebee
+}
+
+
+
+
+function PabeDebe4(){
+    let PabeDebee = Depsum4() - cost4()
+
+    document.getElementById('PabeDebeShow4').innerHTML = PabeDebee;
+
+    return PabeDebee
+}
+
+
+
+
+function PabeDebe5(){
+    let PabeDebee = Depsum5() - cost5()
+
+    document.getElementById('PabeDebeShow5').innerHTML = PabeDebee;
+
+    return PabeDebee
+}
+
+
+function totalpabeDebe(){
+
+    let  totalpabeDebe = PabeDebe1() + PabeDebe2() + PabeDebe3() + PabeDebe4() + PabeDebe5()
+
+    document.getElementById('totalpabeDebeShow1').innerHTML = totalpabeDebe;
+
+   
+
+}
 
 
 
