@@ -8,7 +8,7 @@ var myArrDeposit1 = [];
 var myArrDeposit2 = [];
 var myArrDeposit3 = [];
 var myArrDeposit4 = [];
-var myArrDeposit5 = []
+var myArrDeposit5 = [];
 
 function sum1() {
     var summ1 = myArr1.reduce((a, b) => a + b, 0);
