@@ -10,6 +10,18 @@ var myArrDeposit3 = [];
 var myArrDeposit4 = [];
 var myArrDeposit5 = [];
 
+let btn = document.querySelector("#Toggle");
+let div = document.querySelector("#hidediv");
+
+btn.addEventListener("click", () => {
+    if (div.style.display === "block") {
+        div.style.display = "none";
+    } else {
+        div.style.display = "block";
+    }
+});
+
+
 function sum1() {
     var summ1 = myArr1.reduce((a, b) => a + b, 0);
 
@@ -25,8 +37,6 @@ function ttl() {
     document.getElementById('show9').innerHTML = xx;
 
     return xx
-
-
 }
 
 
@@ -80,29 +90,23 @@ function Depsum2() {
     return summ1
 }
 
-
-
 function Depsum3() {
     var summ1 = myArrDeposit3.reduce((a, b) => a + b, 0);
-
     document.getElementById('DepShow3').innerHTML = summ1;
     return summ1
 }
 
 function Depsum4() {
     var summ1 = myArrDeposit4.reduce((a, b) => a + b, 0);
-
     document.getElementById('DepShow4').innerHTML = summ1;
     return summ1
 }
 
 function Depsum5() {
     var summ1 = myArrDeposit5.reduce((a, b) => a + b, 0);
-
     document.getElementById('DepShow5').innerHTML = summ1;
     return summ1
 }
-
 
 function mealRate() {
     let mr1 = sumBazar()
@@ -110,25 +114,22 @@ function mealRate() {
 
     let mealRate = mr1 / mr2
 
-    document.getElementById('showMealRate').innerHTML = mealRate + " Taka" + " Per" + " Meal";
+    document.getElementById('showMealRate').innerHTML = mealRate + "  " + "Taka" + " Per" + " Meal";
 
     return mealRate
 }
 
-function cost1(){
-
-
-    let costt  = mealRate()  * sum1()
-
+function cost1() {
+    let costt = mealRate() * sum1()
     document.getElementById('CostShow1').innerHTML = costt;
 
     return costt
 
 }
 
-function cost2(){
+function cost2() {
 
-    let costt  = mealRate()  * sum2()
+    let costt = mealRate() * sum2()
 
     document.getElementById('CostShow2').innerHTML = costt;
 
@@ -137,9 +138,9 @@ function cost2(){
 }
 
 
-function cost3(){
+function cost3() {
 
-    let costt  = mealRate()  * sum3()
+    let costt = mealRate() * sum3()
 
     document.getElementById('CostShow3').innerHTML = costt;
 
@@ -148,9 +149,9 @@ function cost3(){
 }
 
 
-function cost4(){
+function cost4() {
 
-    let costt  = mealRate()  * sum4()
+    let costt = mealRate() * sum4()
 
     document.getElementById('CostShow4').innerHTML = costt;
 
@@ -159,9 +160,9 @@ function cost4(){
 }
 
 
-function cost5(){
+function cost5() {
 
-    let costt  = mealRate()  * sum5()
+    let costt = mealRate() * sum5()
 
     document.getElementById('CostShow5').innerHTML = costt;
 
@@ -173,7 +174,7 @@ function cost5(){
 
 
 
-function PabeDebe1(){
+function PabeDebe1() {
     let PabeDebee = Depsum1() - cost1()
 
     document.getElementById('PabeDebeShow1').innerHTML = PabeDebee;
@@ -182,7 +183,7 @@ function PabeDebe1(){
 }
 
 
-function PabeDebe2(){
+function PabeDebe2() {
     let PabeDebee = Depsum2() - cost2()
 
     document.getElementById('PabeDebeShow2').innerHTML = PabeDebee;
@@ -193,7 +194,7 @@ function PabeDebe2(){
 
 
 
-function PabeDebe3(){
+function PabeDebe3() {
     let PabeDebee = Depsum3() - cost3()
 
     document.getElementById('PabeDebeShow3').innerHTML = PabeDebee;
@@ -204,7 +205,7 @@ function PabeDebe3(){
 
 
 
-function PabeDebe4(){
+function PabeDebe4() {
     let PabeDebee = Depsum4() - cost4()
 
     document.getElementById('PabeDebeShow4').innerHTML = PabeDebee;
@@ -215,7 +216,7 @@ function PabeDebe4(){
 
 
 
-function PabeDebe5(){
+function PabeDebe5() {
     let PabeDebee = Depsum5() - cost5()
 
     document.getElementById('PabeDebeShow5').innerHTML = PabeDebee;
@@ -224,20 +225,15 @@ function PabeDebe5(){
 }
 
 
-function totalpabeDebe(){
+function totalpabeDebe() {
 
-    let  totalpabeDebe = PabeDebe1() + PabeDebe2() + PabeDebe3() + PabeDebe4() + PabeDebe5()
+    let totalpabeDebe = PabeDebe1() + PabeDebe2() + PabeDebe3() + PabeDebe4() + PabeDebe5()
 
     document.getElementById('totalpabeDebeShow1').innerHTML = totalpabeDebe;
 
-   
+
 
 }
-
-
-
-
-
 
 function Calculation1() {
 
@@ -255,9 +251,6 @@ function Calculation1() {
 
     document.getElementById('res1').innerHTML = myArr1;
 }
-
-
-
 
 function Calculation2() {
 

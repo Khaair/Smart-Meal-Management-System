@@ -9,6 +9,12 @@
 
 
 }
+.clear {
+  height: 250px;
+  width: 250px;
+  background-color: red;
+  margin-top: 20px;
+}
 
 
 .one{
@@ -48,9 +54,16 @@
   color: aliceblue;
 }
 
+.hide{
+  grid-column: 1/-1;
+  display: none;
+}
+
 .titlee{
   background-color: #0B0B45;
 }
+
+
 
 
 
